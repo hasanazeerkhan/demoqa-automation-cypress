@@ -1,6 +1,15 @@
+import {
+  elements,
+  forms,
+  alertsWindows,
+  widgets,
+  interactions,
+  bookStore,
+} from "../fixtures/webelements.js";
+
 describe("Demo QA - Elements", function () {
   beforeEach(function () {
-    cy.visit("/");
+    cy.visit(elements.url);
   });
   it("Text box", function () {});
   it("Check box", function () {});
@@ -14,14 +23,14 @@ describe("Demo QA - Elements", function () {
 
 describe("Demo QA - Forms", function () {
   beforeEach(function () {
-    cy.visit("/");
+    cy.visit(forms.url);
   });
   it("Practice Form", function () {});
 });
 
 describe("Demo QA - Alert, Frame and Windows", function () {
   beforeEach(function () {
-    cy.visit("/");
+    cy.visit(alertsWindows.url);
   });
   it("Browser Windows", function () {});
   it("Alerts", function () {});
@@ -32,7 +41,7 @@ describe("Demo QA - Alert, Frame and Windows", function () {
 
 describe("Demo QA - WIdgets", function () {
   beforeEach(function () {
-    cy.visit("/");
+    cy.visit(widgets.url);
   });
   it("Accordian", function () {});
   it("Auto Complete", function () {});
@@ -45,7 +54,7 @@ describe("Demo QA - WIdgets", function () {
 
 describe("Demo QA - Interactions", function () {
   beforeEach(function () {
-    cy.visit("/");
+    cy.visit(interactions.url);
   });
   it("Sortable", function () {});
   it("Selectable", function () {});
@@ -56,7 +65,7 @@ describe("Demo QA - Interactions", function () {
 
 describe("Demo QA - Book Store Application", function () {
   beforeEach(function () {
-    cy.visit("/");
+    cy.visit(bookStore.url);
   });
   it("Login", function () {});
   it("Book Store", function () {});
